@@ -1,0 +1,76 @@
+Patient Education
+
+ 
+
+Common Disorders (List)
+
+This is the section of the website that has links to the APMA website that do not work.  I was able to find the corrected links however this will only be temporary fix until they change their website again.  Here are three ways to handle this section:
+
+Remove the page
+
+Keep the bulleted list of common disorders and at the bottom put a link to the APMA’s general website stating for more information click here.
+
+Keep the bulleted list that will go to pages on your website that have all of the information copied from APMA with a credited source link at the bottom of the page: ex: Source: American Podiatric Medical Association (APMA) https://www.apma.org/(#3 is good but we will have to contact APMA to see if it is ok to use and edit the information to fit your website)  Alternatively there is another website called Foot Health Facts that has similar information https://www.foothealthfacts.org/foot-ankle-conditions/browse-foot-ankle-conditions  We could contact them to see if we are able to use their information as a credited source on the website as well.
+
+Let me know how you want to handle this section…
+
+
+
+-- edit current website text below --
+
+
+
+Achilles Tendonitis & Flat Feet    https://www.apma.org/Patients/FootHealth.cfm?ItemNumber=1952
+
+Arthritic Conditions    https://www.apma.org/Patients/FootHealthList.cfm?navItemNumber=25223
+
+Arthritis    https://www.apma.org/Patients/FootHealth.cfm?ItemNumber=977
+
+Gout    https://www.apma.org/Patients/FootHealth.cfm?ItemNumber=38396
+
+Athlete's Foot    https://www.apma.org/Patients/FootHealth.cfm?ItemNumber=978
+
+Bunions    https://www.apma.org/Patients/FootHealth.cfm?ItemNumber=979
+
+Corns & Callouses    https://www.apma.org/Patients/FootHealth.cfm?ItemNumber=1346
+
+Custom Orthotics    https://www.apma.org/Patients/FootHealth.cfm?ItemNumber=988
+
+Diabetic Wound Care    https://www.apma.org/Patients/FootHealth.cfm?ItemNumber=981
+
+Fungus Nails    https://www.apma.org/Patients/FootHealth.cfm?ItemNumber=1523
+
+Haglund's Deformity    https://www.apma.org/Patients/FootHealth.cfm?ItemNumber=1862
+
+Hammertoes    https://www.apma.org/Patients/FootHealth.cfm?ItemNumber=1863
+
+Heel Pain, Bone Spurs & Plantar Fasciitis
+
+https://www.apma.org/Patients/FootHealth.cfm?ItemNumber=985
+
+High Blood Pressure    https://www.apma.org/Patients/FootHealth.cfm?ItemNumber=1524
+
+Ingrown Nails    https://www.apma.org/Patients/FootHealth.cfm?ItemNumber=1522
+
+Neuromas    https://www.apma.org/Patients/FootHealth.cfm?ItemNumber=987
+
+Peripheral Arterial Disease    https://www.apma.org/Patients/FootHealth.cfm?ItemNumber=1021
+
+Peripheral Neuropathy    https://www.apma.org/Patients/FootHealth.cfm?ItemNumber=1864
+
+Psoriasis    https://www.apma.org/Patients/FootHealth.cfm?ItemNumber=1950
+
+
+
+Skin Cancers of the Feet    https://www.apma.org/Patients/FootHealth.cfm?ItemNumber=990
+
+Sprains, Strains & Fractures    https://www.apma.org/Patients/FootHealth.cfm?ItemNumber=982
+
+Surgery    https://www.apma.org/Patients/FootHealth.cfm?ItemNumber=1560
+
+Sweaty Feet    https://www.apma.org/Patients/FootHealth.cfm?ItemNumber=1951
+
+Warts & Growths    https://www.apma.org/Patients/FootHealth.cfm?ItemNumber=989
+
+
+
