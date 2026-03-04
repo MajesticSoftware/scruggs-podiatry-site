@@ -1,85 +1,86 @@
-import { MapPin, Phone, Mail, Clock, Car } from "lucide-react";
+import { MapPin, Phone, Mail, Clock, Car, Printer, Calendar, Users, AlertCircle } from "lucide-react";
 import Link from "next/link";
 
 export default function ContactPage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-blue-50 to-white py-16">
+      <section className="relative gradient-mesh py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Contact Us
+          <div className="text-center glass-dark p-12 rounded-2xl shadow-glow-lg animate-float">
+            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
+              Contact <span className="text-gradient">Us</span>
             </h1>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-200 max-w-3xl mx-auto">
               We're here to help with all your foot and ankle care needs
             </p>
           </div>
         </div>
       </section>
 
-      {/* Contact Information Grid */}
-      <section className="py-16">
+      {/* Main Content */}
+      <section className="py-16 bg-gradient-to-br from-purple-50 via-pink-50 to-blue-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Contact Information */}
             <div>
-              <h2 className="text-2xl font-bold text-gray-900 mb-8">Get in Touch</h2>
+              <h2 className="text-2xl font-bold text-gradient mb-8">Get in Touch</h2>
               
               {/* Office Location */}
-              <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
-                <h3 className="text-xl font-semibold text-gray-900 mb-6 flex items-center">
-                  <MapPin className="h-6 w-6 text-blue-600 mr-3" />
-                  Office Location
-                </h3>
-                <div className="space-y-3 text-gray-700">
-                  <p className="font-semibold">Walker Professional Building</p>
-                  <p>19 Walker Avenue, Suite 200</p>
-                  <p>Pikesville, MD 21208</p>
-                  
-                  <div className="pt-4">
-                    <a
-                      href="https://www.google.com/maps/search/19+Walker+Avenue,+Suite+200,+Pikesville,+MD+21208"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center text-blue-600 hover:text-blue-700 font-medium"
-                    >
-                      Get Directions
-                      <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                      </svg>
-                    </a>
+              <div className="glass p-6 rounded-xl shadow-glow mb-6 hover-lift">
+                <div className="flex items-start mb-4">
+                  <div className="w-12 h-12 gradient-primary rounded-full flex items-center justify-center mr-3 flex-shrink-0 shadow-glow">
+                    <MapPin className="h-6 w-6 text-white" />
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-gray-900 mb-2">Office Location</h3>
+                    <p className="text-gray-700">
+                      19 Walker Avenue, Suite 200<br />
+                      Pikesville, MD 21208
+                    </p>
                   </div>
                 </div>
+                <a 
+                  href="https://maps.google.com/?q=19+Walker+Avenue,+Suite+200,+Pikesville,+MD+21208"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center text-purple-600 hover:text-purple-700 font-semibold mt-2"
+                >
+                  Get Directions <MapPin className="h-4 w-4 ml-1" />
+                </a>
               </div>
 
               {/* Contact Methods */}
-              <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
-                <h3 className="text-xl font-semibold text-gray-900 mb-6">Contact Information</h3>
+              <div className="gradient-accent p-6 rounded-xl shadow-glow mb-6">
+                <h3 className="font-bold text-white mb-4">Contact Information</h3>
                 <div className="space-y-4">
                   <div className="flex items-center">
-                    <Phone className="h-5 w-5 text-blue-600 mr-3 flex-shrink-0" />
+                    <div className="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center mr-3">
+                      <Phone className="h-5 w-5 text-white" />
+                    </div>
                     <div>
-                      <p className="text-sm text-gray-600">Phone</p>
-                      <a href="tel:4104865454" className="text-lg font-semibold text-gray-900 hover:text-blue-600">
+                      <p className="text-gray-100">Phone</p>
+                      <a href="tel:4104865454" className="text-lg font-bold text-white hover:text-gray-200">
                         (410) 486-5454
                       </a>
                     </div>
                   </div>
-                  
                   <div className="flex items-center">
-                    <Phone className="h-5 w-5 text-gray-400 mr-3 flex-shrink-0" />
+                    <div className="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center mr-3">
+                      <Printer className="h-5 w-5 text-white" />
+                    </div>
                     <div>
-                      <p className="text-sm text-gray-600">Fax</p>
-                      <p className="text-lg font-semibold text-gray-900">(410) 653-7745</p>
+                      <p className="text-gray-100">Fax</p>
+                      <p className="text-lg font-bold text-white">(410) 486-5353</p>
                     </div>
                   </div>
-                  
                   <div className="flex items-center">
-                    <Mail className="h-5 w-5 text-blue-600 mr-3 flex-shrink-0" />
+                    <div className="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center mr-3">
+                      <Mail className="h-5 w-5 text-white" />
+                    </div>
                     <div>
-                      <p className="text-sm text-gray-600">Email</p>
-                      <a href="mailto:ScruggsPodiatry@verizon.net" className="text-lg font-semibold text-gray-900 hover:text-blue-600">
+                      <p className="text-gray-100">Email</p>
+                      <a href="mailto:ScruggsPodiatry@verizon.net" className="text-lg font-bold text-white hover:text-gray-200">
                         ScruggsPodiatry@verizon.net
                       </a>
                     </div>
@@ -88,36 +89,36 @@ export default function ContactPage() {
               </div>
 
               {/* Office Hours */}
-              <div className="bg-white rounded-lg shadow-lg p-8">
-                <h3 className="text-xl font-semibold text-gray-900 mb-6 flex items-center">
-                  <Clock className="h-6 w-6 text-blue-600 mr-3" />
+              <div className="glass p-6 rounded-xl shadow-glow hover-lift">
+                <h3 className="font-bold text-gray-900 mb-4 flex items-center">
+                  <Clock className="h-5 w-5 text-purple-600 mr-2" />
                   Office Hours
                 </h3>
-                <p className="text-gray-700 font-semibold mb-4">By Appointment Only</p>
+                <p className="text-gray-700 font-semibold mb-2">By Appointment Only</p>
                 <div className="space-y-2 text-gray-700">
-                  <div className="flex justify-between">
-                    <span>Monday</span>
-                    <span className="font-medium">9:00 AM - 6:00 PM</span>
+                  <div className="flex justify-between p-2 hover:bg-purple-50 rounded">
+                    <span className="font-medium">Monday</span>
+                    <span className="text-purple-600 font-semibold">9:00 AM - 6:00 PM</span>
                   </div>
-                  <div className="flex justify-between">
-                    <span>Tuesday</span>
-                    <span className="font-medium text-gray-500">Closed</span>
+                  <div className="flex justify-between p-2 hover:bg-purple-50 rounded">
+                    <span className="font-medium">Tuesday</span>
+                    <span className="text-gray-500">Closed</span>
                   </div>
-                  <div className="flex justify-between">
-                    <span>Wednesday</span>
-                    <span className="font-medium text-gray-500">Closed</span>
+                  <div className="flex justify-between p-2 hover:bg-purple-50 rounded">
+                    <span className="font-medium">Wednesday</span>
+                    <span className="text-gray-500">Closed</span>
                   </div>
-                  <div className="flex justify-between">
-                    <span>Thursday</span>
-                    <span className="font-medium">10:00 AM - 5:00 PM</span>
+                  <div className="flex justify-between p-2 hover:bg-purple-50 rounded">
+                    <span className="font-medium">Thursday</span>
+                    <span className="text-purple-600 font-semibold">10:00 AM - 5:00 PM</span>
                   </div>
-                  <div className="flex justify-between">
-                    <span>Friday</span>
-                    <span className="font-medium">10:00 AM - 1:00 PM</span>
+                  <div className="flex justify-between p-2 hover:bg-purple-50 rounded">
+                    <span className="font-medium">Friday</span>
+                    <span className="text-purple-600 font-semibold">10:00 AM - 1:00 PM</span>
                   </div>
-                  <div className="flex justify-between">
-                    <span>Saturday & Sunday</span>
-                    <span className="font-medium text-gray-500">Closed</span>
+                  <div className="flex justify-between p-2 hover:bg-purple-50 rounded text-gray-500">
+                    <span className="font-medium">Saturday & Sunday</span>
+                    <span>Closed</span>
                   </div>
                 </div>
               </div>
@@ -194,6 +195,47 @@ export default function ContactPage() {
               or visit the nearest emergency room. Do not wait for an appointment if you are experiencing severe pain, 
               signs of infection, or other urgent symptoms.
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Quick Actions */}
+      <section className="py-16 gradient-hero">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl font-bold text-center text-white mb-8">Quick Actions</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <Link
+              href="/appointment"
+              className="glass-dark text-white p-6 rounded-xl text-center hover-lift shadow-glow transition-all"
+            >
+              <div className="w-16 h-16 gradient-accent rounded-full flex items-center justify-center mx-auto mb-3 shadow-glow animate-pulse-slow">
+                <Calendar className="h-8 w-8" />
+              </div>
+              <h3 className="font-bold text-lg">Schedule Appointment</h3>
+              <p className="text-gray-200 mt-2">Book your next visit online</p>
+            </Link>
+            
+            <a
+              href="tel:4104865454"
+              className="glass-dark text-white p-6 rounded-xl text-center hover-lift shadow-glow transition-all"
+            >
+              <div className="w-16 h-16 gradient-primary rounded-full flex items-center justify-center mx-auto mb-3 shadow-glow animate-pulse-slow">
+                <Phone className="h-8 w-8" />
+              </div>
+              <h3 className="font-bold text-lg">Call Us</h3>
+              <p className="text-gray-200 mt-2">(410) 486-5454</p>
+            </a>
+            
+            <Link
+              href="/patient-center"
+              className="glass-dark text-white p-6 rounded-xl text-center hover-lift shadow-glow transition-all"
+            >
+              <div className="w-16 h-16 gradient-secondary rounded-full flex items-center justify-center mx-auto mb-3 shadow-glow animate-pulse-slow">
+                <Users className="h-8 w-8" />
+              </div>
+              <h3 className="font-bold text-lg">Patient Center</h3>
+              <p className="text-gray-200 mt-2">Forms and resources</p>
+            </Link>
           </div>
         </div>
       </section>

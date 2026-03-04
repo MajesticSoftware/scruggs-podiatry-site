@@ -1,7 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import { Calendar, Clock, Phone, Mail, User, AlertCircle } from "lucide-react";
+import Link from "next/link";
+import { Calendar, Clock, User, Mail, Phone, AlertCircle } from "lucide-react";
 
 export default function AppointmentPage() {
   const [formData, setFormData] = useState({
@@ -32,13 +33,13 @@ export default function AppointmentPage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-blue-50 to-white py-16">
+      <section className="relative gradient-mesh py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Request an Appointment
+          <div className="text-center glass-dark p-12 rounded-2xl shadow-glow-lg">
+            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
+              Request an <span className="text-gradient">Appointment</span>
             </h1>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-200 max-w-3xl mx-auto">
               Schedule your visit with Dr. Scruggs for expert podiatric care
             </p>
           </div>
@@ -46,19 +47,19 @@ export default function AppointmentPage() {
       </section>
 
       {/* Main Content */}
-      <section className="py-16">
+      <section className="py-16 bg-gradient-to-br from-purple-50 via-pink-50 to-blue-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Important Notice */}
-          <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-6 mb-8">
+          <div className="gradient-accent p-6 mb-8 rounded-xl shadow-glow">
             <div className="flex items-start">
-              <AlertCircle className="h-6 w-6 text-yellow-600 mt-1 mr-3 flex-shrink-0" />
+              <AlertCircle className="h-6 w-6 text-white mt-1 mr-3 flex-shrink-0" />
               <div>
-                <h3 className="font-semibold text-gray-900 mb-2">Important Information</h3>
-                <p className="text-gray-700 text-sm mb-2">
+                <h3 className="font-bold text-white mb-2">Important Information</h3>
+                <p className="text-gray-100 text-sm mb-2">
                   Please use this form for general appointment requests only. DO NOT send personal health information through this form. 
                   Specific patient care must be addressed during your appointment.
                 </p>
-                <p className="text-gray-700 text-sm">
+                <p className="text-gray-100 text-sm">
                   A representative will contact you within one to two business days to confirm your appointment.
                 </p>
               </div>
@@ -67,31 +68,31 @@ export default function AppointmentPage() {
 
           {/* Quick Contact Options */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
-            <div className="bg-blue-50 rounded-lg p-6">
+            <div className="gradient-primary rounded-xl p-6 shadow-glow hover-lift">
               <div className="flex items-center mb-3">
-                <Phone className="h-6 w-6 text-blue-600 mr-3" />
-                <h3 className="text-lg font-semibold text-gray-900">Call Directly</h3>
+                <Phone className="h-6 w-6 text-white mr-3" />
+                <h3 className="text-lg font-bold text-white">Call Directly</h3>
               </div>
-              <p className="text-gray-700 mb-3">To speak to someone directly:</p>
-              <a href="tel:4104865454" className="text-2xl font-bold text-blue-600 hover:text-blue-700">
+              <p className="text-gray-100 mb-3">To speak to someone directly:</p>
+              <a href="tel:4104865454" className="text-2xl font-bold text-white hover:text-gray-200">
                 (410) 486-5454
               </a>
             </div>
             
-            <div className="bg-red-50 rounded-lg p-6">
+            <div className="gradient-secondary rounded-xl p-6 shadow-glow hover-lift">
               <div className="flex items-center mb-3">
-                <AlertCircle className="h-6 w-6 text-red-600 mr-3" />
-                <h3 className="text-lg font-semibold text-gray-900">Urgent Care</h3>
+                <AlertCircle className="h-6 w-6 text-white mr-3" />
+                <h3 className="text-lg font-bold text-white">Urgent Care</h3>
               </div>
-              <p className="text-gray-700">
+              <p className="text-gray-100">
                 If you have symptoms of an urgent nature, please call your primary care doctor or go to the emergency room immediately.
               </p>
             </div>
           </div>
 
           {/* Appointment Request Form */}
-          <div className="bg-white rounded-lg shadow-lg p-8">
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">Appointment Request Form</h2>
+          <div className="glass rounded-2xl shadow-glow-lg p-8">
+            <h2 className="text-2xl font-bold text-gradient mb-6">Appointment Request Form</h2>
             
             <form onSubmit={handleSubmit} className="space-y-6">
               {/* Name */}
@@ -306,7 +307,7 @@ export default function AppointmentPage() {
               <div className="pt-6">
                 <button
                   type="submit"
-                  className="w-full py-4 bg-blue-600 text-white font-semibold rounded-lg shadow-lg hover:bg-blue-700 transition-all transform hover:scale-[1.02]"
+                  className="w-full py-4 gradient-primary text-white font-bold rounded-lg shadow-glow hover-lift transition-all"
                 >
                   Submit Appointment Request
                 </button>
@@ -315,13 +316,13 @@ export default function AppointmentPage() {
           </div>
 
           {/* Office Hours */}
-          <div className="mt-12 bg-gray-50 rounded-lg p-8">
-            <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center">
-              <Clock className="h-6 w-6 text-blue-600 mr-2" />
+          <div className="mt-12 gradient-accent rounded-xl p-8 shadow-glow">
+            <h3 className="text-xl font-bold text-white mb-4 flex items-center">
+              <Clock className="h-6 w-6 text-white mr-2" />
               Office Hours
             </h3>
-            <p className="text-gray-700 font-semibold mb-3">By Appointment Only</p>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-gray-700">
+            <p className="text-gray-100 font-bold mb-3">By Appointment Only</p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-white">
               <div>Monday: 9:00 AM - 6:00 PM</div>
               <div>Tuesday: Closed</div>
               <div>Wednesday: Closed</div>

@@ -3,6 +3,10 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  --secondary-gradient: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  --accent-gradient: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  --dark-gradient: linear-gradient(135deg, #30cfd0 0%, #330867 100%);
 }
 
 @theme inline {
@@ -20,7 +24,96 @@
 }
 
 body {
-  background: var(--background);
+  background: #f0f4f8;
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+}
+
+/* Modern gradient backgrounds */
+.gradient-primary {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.gradient-secondary {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+}
+
+.gradient-accent {
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+}
+
+.gradient-dark {
+  background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);
+}
+
+.gradient-hero {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+}
+
+.gradient-mesh {
+  background-color: #4158D0;
+  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+}
+
+/* Text gradient effects */
+.text-gradient {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+/* Glassmorphism effects */
+.glass {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.glass-dark {
+  background: rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+/* Smooth animations */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0px); }
+}
+
+@keyframes pulse-slow {
+  0% { opacity: 1; }
+  50% { opacity: 0.8; }
+  100% { opacity: 1; }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 3s ease-in-out infinite;
+}
+
+/* Better shadows */
+.shadow-glow {
+  box-shadow: 0 0 30px rgba(102, 126, 234, 0.3);
+}
+
+.shadow-glow-lg {
+  box-shadow: 0 0 60px rgba(102, 126, 234, 0.4);
+}
+
+/* Hover effects */
+.hover-lift {
+  transition: all 0.3s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }

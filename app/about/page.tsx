@@ -8,13 +8,13 @@ export default function AboutPage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-blue-50 to-white py-16">
+      <section className="relative gradient-mesh py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              About Scruggs Podiatry
+          <div className="text-center glass-dark p-12 rounded-2xl shadow-glow-lg animate-float">
+            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
+              About <span className="text-gradient">Scruggs Podiatry</span>
             </h1>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-200 max-w-3xl mx-auto">
               Information about the Practice, History, Mission & Vision
             </p>
           </div>
@@ -22,12 +22,12 @@ export default function AboutPage() {
       </section>
 
       {/* Main Content */}
-      <section className="py-16">
+      <section className="py-16 bg-gradient-to-br from-purple-50 via-pink-50 to-blue-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
-            <div className="bg-white p-8 rounded-lg shadow-lg mb-12">
+            <div className="glass p-8 rounded-2xl shadow-glow-lg mb-12 hover-lift">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Our Practice</h2>
-              <p className="text-gray-600 leading-relaxed mb-6">
+              <p className="text-gray-700 leading-relaxed mb-6">
                 Scruggs Podiatry, PC has been providing exceptional foot and ankle care to the Baltimore Metro Community for over 25 years. Our state-of-the-art facility in Pikesville offers the latest in cutting-edge techniques and equipment while maintaining the warmth and individual attention that has been our hallmark since the beginning.
               </p>
               <p className="text-gray-600 leading-relaxed">
@@ -37,29 +37,29 @@ export default function AboutPage() {
 
             {/* Mission & Vision */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-              <div className="bg-blue-50 p-8 rounded-lg">
-                <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center">
-                  <Heart className="h-6 w-6 text-blue-600 mr-2" />
+              <div className="gradient-primary p-8 rounded-xl shadow-glow hover-lift">
+                <h3 className="text-xl font-bold text-white mb-4 flex items-center">
+                  <Heart className="h-6 w-6 text-white mr-2" />
                   Our Mission
                 </h3>
-                <p className="text-gray-600">
+                <p className="text-gray-100">
                   To provide comprehensive, compassionate podiatric care using the latest techniques and technologies while maintaining a personal touch and building lasting relationships with our patients.
                 </p>
               </div>
-              <div className="bg-blue-50 p-8 rounded-lg">
-                <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center">
-                  <Award className="h-6 w-6 text-blue-600 mr-2" />
+              <div className="gradient-secondary p-8 rounded-xl shadow-glow hover-lift">
+                <h3 className="text-xl font-bold text-white mb-4 flex items-center">
+                  <Award className="h-6 w-6 text-white mr-2" />
                   Our Vision
                 </h3>
-                <p className="text-gray-600">
+                <p className="text-gray-100">
                   To be the leading podiatric practice in the Baltimore area, known for excellence in patient care, innovative treatments, and improving the quality of life for our patients through better foot health.
                 </p>
               </div>
             </div>
 
             {/* Doctor Bio Section */}
-            <div className="bg-white p-8 rounded-lg shadow-lg mb-12">
-              <h2 className="text-2xl font-bold text-gray-900 mb-6">Meet Dr. Scruggs</h2>
+            <div className="glass p-8 rounded-2xl shadow-glow-lg mb-12">
+              <h2 className="text-2xl font-bold text-gradient mb-6">Meet Dr. Scruggs</h2>
               <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
                 <div className="lg:col-span-2">
                   <p className="text-gray-600 leading-relaxed mb-4">
@@ -89,7 +89,7 @@ export default function AboutPage() {
             </div>
 
             {/* Team Members */}
-            <div className="bg-white p-8 rounded-lg shadow-lg">
+            <div className="glass p-8 rounded-2xl shadow-glow-lg">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Our Team</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div className="text-center">
@@ -115,30 +115,30 @@ export default function AboutPage() {
       </section>
 
       {/* Values Section */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 gradient-hero">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">Our Core Values</h2>
+          <h2 className="text-3xl font-bold text-center text-white mb-12">Our Core Values</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="text-center">
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-blue-100 rounded-full mb-4">
-                <Heart className="h-8 w-8 text-blue-600" />
+            <div className="text-center glass-dark p-6 rounded-xl shadow-glow hover-lift">
+              <div className="inline-flex items-center justify-center w-16 h-16 gradient-accent rounded-full mb-4 shadow-glow">
+                <Heart className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-xl font-semibold mb-2">Compassionate Care</h3>
-              <p className="text-gray-600">We treat every patient with kindness, respect, and understanding</p>
+              <h3 className="text-xl font-bold mb-2 text-white">Compassionate Care</h3>
+              <p className="text-gray-200">We treat every patient with kindness, respect, and understanding</p>
             </div>
-            <div className="text-center">
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-blue-100 rounded-full mb-4">
-                <Award className="h-8 w-8 text-blue-600" />
+            <div className="text-center glass-dark p-6 rounded-xl shadow-glow hover-lift">
+              <div className="inline-flex items-center justify-center w-16 h-16 gradient-primary rounded-full mb-4 shadow-glow">
+                <Award className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-xl font-semibold mb-2">Excellence</h3>
-              <p className="text-gray-600">We strive for the highest standards in podiatric care and patient outcomes</p>
+              <h3 className="text-xl font-bold mb-2 text-white">Excellence</h3>
+              <p className="text-gray-200">We strive for the highest standards in podiatric care and patient outcomes</p>
             </div>
-            <div className="text-center">
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-blue-100 rounded-full mb-4">
-                <Clock className="h-8 w-8 text-blue-600" />
+            <div className="text-center glass-dark p-6 rounded-xl shadow-glow hover-lift">
+              <div className="inline-flex items-center justify-center w-16 h-16 gradient-secondary rounded-full mb-4 shadow-glow">
+                <Clock className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-xl font-semibold mb-2">Reliability</h3>
-              <p className="text-gray-600">We are committed to being there when our patients need us most</p>
+              <h3 className="text-xl font-bold mb-2 text-white">Reliability</h3>
+              <p className="text-gray-200">We are committed to being there when our patients need us most</p>
             </div>
           </div>
         </div>
