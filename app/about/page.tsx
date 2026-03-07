@@ -8,14 +8,22 @@ export default function AboutPage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative gradient-mesh py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center glass-dark p-12 rounded-2xl shadow-glow-lg animate-float">
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
+      <section className="relative py-24 overflow-hidden">
+        <Image
+          src="/images/p-scruggs2.jpg"
+          alt="Dr. Scruggs Podiatry"
+          fill
+          className="object-cover object-top"
+          priority
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-blue-900/85 via-purple-900/70 to-transparent" />
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-left max-w-2xl">
+            <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 drop-shadow-lg">
               About <span className="text-gradient">Scruggs Podiatry</span>
             </h1>
-            <p className="text-xl text-gray-200 max-w-3xl mx-auto">
-              Information about the Practice, History, Mission & Vision
+            <p className="text-xl text-gray-100 max-w-xl">
+              Serving the Baltimore Metro Community with compassionate podiatric care for over 25 years.
             </p>
           </div>
         </div>
@@ -77,13 +85,16 @@ export default function AboutPage() {
                     <li>Member of Maryland Podiatric Medical Association</li>
                   </ul>
                 </div>
-                <div className="bg-gray-50 p-4 rounded-lg">
-                  <div className="aspect-w-3 aspect-h-4 bg-gray-200 rounded-lg overflow-hidden mb-4">
-                    <div className="flex items-center justify-center h-64 bg-gray-300">
-                      <Users className="h-20 w-20 text-gray-400" />
-                    </div>
+                <div className="text-center">
+                  <div className="relative w-full rounded-2xl overflow-hidden shadow-glow mb-3" style={{height: '320px'}}>
+                    <Image
+                      src="/images/p-scruggs1.jpg"
+                      alt="Dr. Scruggs"
+                      fill
+                      className="object-cover object-top"
+                    />
                   </div>
-                  <p className="text-sm text-gray-600 italic text-center">Dr. Scruggs</p>
+                  <p className="text-sm text-gray-600 italic font-semibold">Dr. Scruggs, DPM</p>
                 </div>
               </div>
             </div>
@@ -91,21 +102,29 @@ export default function AboutPage() {
             {/* Team Members */}
             <div className="glass p-8 rounded-2xl shadow-glow-lg">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Our Team</h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div className="text-center">
-                  <div className="w-32 h-32 mx-auto bg-gray-200 rounded-full flex items-center justify-center mb-4">
-                    <Users className="h-16 w-16 text-gray-400" />
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div className="text-center group">
+                  <div className="relative w-40 h-40 mx-auto rounded-full overflow-hidden mb-4 shadow-glow group-hover:scale-105 transition-all">
+                    <Image src="/images/p-scruggs-sm.jpg" alt="Dr. Scruggs" fill className="object-cover object-top" />
                   </div>
-                  <h3 className="text-lg font-semibold text-gray-900">Sam McFadden</h3>
-                  <p className="text-gray-600">Medical Assistant</p>
-                  <p className="text-sm text-gray-500 mt-2">Dedicated to providing excellent patient care and support</p>
+                  <h3 className="text-lg font-bold text-gray-900">Dr. Scruggs</h3>
+                  <p className="text-purple-600 font-semibold">Podiatrist, DPM</p>
+                  <p className="text-sm text-gray-500 mt-2">25+ years of expert podiatric care</p>
                 </div>
-                <div className="text-center">
-                  <div className="w-32 h-32 mx-auto bg-gray-200 rounded-full flex items-center justify-center mb-4">
-                    <Users className="h-16 w-16 text-gray-400" />
+                <div className="text-center group">
+                  <div className="relative w-40 h-40 mx-auto rounded-full overflow-hidden mb-4 shadow-glow group-hover:scale-105 transition-all">
+                    <Image src="/images/p-sam-mcfadden.jpg" alt="Sam McFadden" fill className="object-cover object-top" />
                   </div>
-                  <h3 className="text-lg font-semibold text-gray-900">Shanda Jones</h3>
-                  <p className="text-gray-600">Office Manager</p>
+                  <h3 className="text-lg font-bold text-gray-900">Sam McFadden</h3>
+                  <p className="text-purple-600 font-semibold">Medical Assistant</p>
+                  <p className="text-sm text-gray-500 mt-2">Dedicated to excellent patient care and support</p>
+                </div>
+                <div className="text-center group">
+                  <div className="relative w-40 h-40 mx-auto rounded-full overflow-hidden mb-4 shadow-glow group-hover:scale-105 transition-all">
+                    <Image src="/images/p-shanda-jones2.jpg" alt="Shanda Jones" fill className="object-cover object-top" />
+                  </div>
+                  <h3 className="text-lg font-bold text-gray-900">Shanda Jones</h3>
+                  <p className="text-purple-600 font-semibold">Office Manager</p>
                   <p className="text-sm text-gray-500 mt-2">Ensuring smooth operations and exceptional patient experience</p>
                 </div>
               </div>

@@ -1,17 +1,26 @@
-import { MapPin, Phone, Mail, Clock, Car, Printer, Calendar, Users, AlertCircle } from "lucide-react";
+import { MapPin, Phone, Mail, Clock, Car, Printer, Calendar, Users, AlertCircle, Instagram } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function ContactPage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative gradient-mesh py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center glass-dark p-12 rounded-2xl shadow-glow-lg animate-float">
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
+      <section className="relative py-24 overflow-hidden">
+        <Image
+          src="/images/p-office.jpg"
+          alt="Scruggs Podiatry Office"
+          fill
+          className="object-cover object-center"
+          priority
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-blue-900/85 via-purple-900/70 to-transparent" />
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-left max-w-2xl">
+            <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 drop-shadow-lg">
               Contact <span className="text-gradient">Us</span>
             </h1>
-            <p className="text-xl text-gray-200 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-100 max-w-xl">
               We're here to help with all your foot and ankle care needs
             </p>
           </div>

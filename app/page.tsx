@@ -14,14 +14,22 @@ export default function Home() {
       <ThreeJSBackground />
       
       {/* Hero Section */}
-      <section className="relative min-h-[90vh] overflow-hidden gradient-mesh">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <section className="relative min-h-[90vh] overflow-hidden">
+        <Image
+          src="/images/slide1.jpg"
+          alt="Healthy family feet"
+          fill
+          className="object-cover object-center"
+          priority
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-blue-900/85 via-purple-900/70 to-transparent" />
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 flex items-center min-h-[90vh]">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center w-full">
             <div>
-              <h1 className="text-5xl md:text-7xl font-bold mb-6">
+              <h1 className="text-5xl md:text-7xl font-bold mb-6 text-white drop-shadow-lg">
                 Welcome to <span className="text-gradient">Scruggs Podiatry</span>
               </h1>
-              <p className="text-xl md:text-2xl mb-8 text-gray-200 max-w-3xl mx-auto leading-relaxed">
+              <p className="text-xl md:text-2xl mb-8 text-gray-100 max-w-2xl leading-relaxed drop-shadow">
                 {welcomeContent.split('\n')[0] || "Scruggs Podiatry, PC is honored to have been servicing the Baltimore Metro Community and vicinity for 25+ years."}
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
@@ -40,8 +48,8 @@ export default function Home() {
                 </Link>
               </div>
             </div>
-            <div className="relative">
-              <div className="absolute inset-0 bg-blue-100 rounded-full blur-3xl opacity-30"></div>
+            <div className="relative hidden lg:block">
+              <div className="absolute inset-0 bg-blue-100 rounded-full blur-3xl opacity-20"></div>
               <InteractiveFootModel />
             </div>
           </div>
@@ -127,32 +135,45 @@ export default function Home() {
       </section>
 
       {/* Call to Actions */}
-      <section className="py-20 gradient-mesh">
+      <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            <div className="glass-dark rounded-2xl p-12 text-white shadow-glow-lg">
-              <h3 className="text-2xl font-bold mb-4">New Patient?</h3>
-              <p className="text-gray-200 mb-6">Schedule your first appointment and experience our personalized care approach.</p>
-              <Link
-                href="/appointment"
-                className="inline-flex items-center px-6 py-3 bg-white text-purple-700 rounded-lg font-bold shadow-glow"
-              >
-                Request Appointment
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Link>
-            </div>
-            
-            <div className="glass rounded-2xl p-12 shadow-glow-lg">
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">Returning Patient?</h3>
-              <p className="text-gray-700 mb-6">Access patient forms, education resources, and manage your foot health.</p>
-              <Link
-                href="/patient-center"
-                className="inline-flex items-center px-6 py-3 gradient-secondary text-white rounded-lg font-bold shadow-glow"
-              >
-                Patient Center
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Link>
-            </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {/* Appointment CTA */}
+            <Link href="/appointment" className="group relative overflow-hidden rounded-2xl shadow-glow hover-lift block">
+              <Image src="/images/cta-appointment.jpg" alt="Request Appointment" width={400} height={270} className="w-full h-52 object-cover group-hover:scale-105 transition-transform duration-500" />
+              <div className="absolute inset-0 bg-gradient-to-t from-blue-900/90 via-blue-900/40 to-transparent" />
+              <div className="absolute bottom-0 p-5">
+                <h3 className="text-white font-bold text-lg">Request Appointment</h3>
+                <p className="text-blue-200 text-sm">Book your visit today</p>
+              </div>
+            </Link>
+            {/* Services CTA */}
+            <Link href="/services" className="group relative overflow-hidden rounded-2xl shadow-glow hover-lift block">
+              <Image src="/images/cta-services.jpg" alt="Our Services" width={400} height={270} className="w-full h-52 object-cover group-hover:scale-105 transition-transform duration-500" />
+              <div className="absolute inset-0 bg-gradient-to-t from-purple-900/90 via-purple-900/40 to-transparent" />
+              <div className="absolute bottom-0 p-5">
+                <h3 className="text-white font-bold text-lg">Our Services</h3>
+                <p className="text-purple-200 text-sm">Comprehensive podiatric care</p>
+              </div>
+            </Link>
+            {/* Team CTA */}
+            <Link href="/about" className="group relative overflow-hidden rounded-2xl shadow-glow hover-lift block">
+              <Image src="/images/cta-team.jpg" alt="Meet Our Team" width={400} height={270} className="w-full h-52 object-cover group-hover:scale-105 transition-transform duration-500" />
+              <div className="absolute inset-0 bg-gradient-to-t from-teal-900/90 via-teal-900/40 to-transparent" />
+              <div className="absolute bottom-0 p-5">
+                <h3 className="text-white font-bold text-lg">Meet Our Team</h3>
+                <p className="text-teal-200 text-sm">Experienced & caring staff</p>
+              </div>
+            </Link>
+            {/* Disorders CTA */}
+            <Link href="/patient-education/common-disorders" className="group relative overflow-hidden rounded-2xl shadow-glow hover-lift block">
+              <Image src="/images/cta-disorders.jpg" alt="Common Disorders" width={400} height={270} className="w-full h-52 object-cover group-hover:scale-105 transition-transform duration-500" />
+              <div className="absolute inset-0 bg-gradient-to-t from-pink-900/90 via-pink-900/40 to-transparent" />
+              <div className="absolute bottom-0 p-5">
+                <h3 className="text-white font-bold text-lg">Common Disorders</h3>
+                <p className="text-pink-200 text-sm">Patient education resources</p>
+              </div>
+            </Link>
           </div>
         </div>
       </section>

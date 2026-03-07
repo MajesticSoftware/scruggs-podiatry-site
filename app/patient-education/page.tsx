@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { BookOpen, Heart, Footprints, AlertCircle, ExternalLink } from "lucide-react";
 
 const educationSections = [
@@ -43,13 +44,21 @@ export default function PatientEducationPage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-blue-50 to-white py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+      <section className="relative py-24 overflow-hidden">
+        <Image
+          src="/images/p-education.jpg"
+          alt="Patient Education"
+          fill
+          className="object-cover object-center"
+          priority
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-teal-900/85 via-blue-900/70 to-transparent" />
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-left max-w-2xl">
+            <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 drop-shadow-lg">
               Patient Education Center
             </h1>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-100 max-w-xl">
               Empowering you with knowledge about foot health, conditions, and treatments
             </p>
           </div>

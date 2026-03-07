@@ -2,7 +2,8 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { Menu, X, ChevronDown, Footprints } from "lucide-react";
+import Image from "next/image";
+import { Menu, X, ChevronDown } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const navigationItems = [
@@ -37,10 +38,13 @@ export function Navigation() {
         <div className="flex justify-between h-16">
           <div className="flex items-center">
             <Link href="/" className="flex items-center group">
-              <div className="w-10 h-10 gradient-accent rounded-full flex items-center justify-center mr-2 shadow-glow group-hover:scale-110 transition-all">
-                <Footprints className="h-6 w-6 text-white" />
-              </div>
-              <span className="font-bold text-xl text-white">Scruggs Podiatry</span>
+              <Image
+                src="/images/logo-scruggs-podiatry-tall.png"
+                alt="Scruggs Podiatry PC"
+                width={120}
+                height={60}
+                className="h-12 w-auto group-hover:scale-105 transition-all"
+              />
             </Link>
           </div>
 
