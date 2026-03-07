@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Phone, MapPin, Clock, Facebook, Mail, Instagram } from "lucide-react";
+import { Phone, MapPin, Clock, Facebook, Mail } from "lucide-react";
 import Image from "next/image";
 
 export function Footer() {
@@ -107,15 +107,8 @@ export function Footer() {
                 <li>Maryland Podiatric Medical Association</li>
               </ul>
               <div className="flex space-x-4 mt-4">
-                <a href="https://www.instagram.com/verentonintl" target="_blank" rel="noopener noreferrer" className="text-gray-200 hover:text-cyan-400 transition-colors group">
-                  <div className="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center group-hover:scale-110 transition-all">
-                    <Instagram className="h-5 w-5" />
-                  </div>
-                </a>
-                <a href="#" className="text-gray-200 hover:text-cyan-400 transition-colors group">
-                  <div className="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center group-hover:scale-110 transition-all">
-                    <Facebook className="h-5 w-5" />
-                  </div>
+                <a href="#" className="hover:text-blue-400 transition-colors">
+                  <Facebook className="h-6 w-6" />
                 </a>
               </div>
             </div>

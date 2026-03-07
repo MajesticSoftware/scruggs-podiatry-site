@@ -9,7 +9,6 @@ const navigationItems = [
   { href: "/", label: "Home" },
   { href: "/about", label: "About Us" },
   { href: "/services", label: "Services" },
-  { href: "/summer-camp", label: "Summer Camp" },
   {
     label: "Patient Education",
     href: "/patient-education",
@@ -58,12 +57,6 @@ export function Navigation() {
               className="text-white hover:text-gray-200 px-3 py-2 rounded-md text-sm font-semibold transition-all hover:bg-white/10"
             >
               Services
-            </Link>
-            <Link
-              href="/summer-camp"
-              className="text-white hover:text-gray-200 px-3 py-2 rounded-md text-sm font-semibold transition-all hover:bg-white/10"
-            >
-              Summer Camp
             </Link>
             {/* Patient Education Dropdown */}
             <div className="relative group">
