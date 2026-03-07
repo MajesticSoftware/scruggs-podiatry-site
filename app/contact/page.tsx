@@ -1,4 +1,4 @@
-import { MapPin, Phone, Mail, Clock, Car, Printer, Calendar, Users, AlertCircle } from "lucide-react";
+import { MapPin, Phone, Mail, Clock, Car, Printer, Calendar, Users, AlertCircle, Instagram } from "lucide-react";
 import Link from "next/link";
 
 export default function ContactPage() {
@@ -74,7 +74,7 @@ export default function ContactPage() {
                       <p className="text-lg font-bold text-white">(410) 486-5353</p>
                     </div>
                   </div>
-                  <div className="flex items-center">
+                  <div className="flex items-center group">
                     <div className="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center mr-3">
                       <Mail className="h-5 w-5 text-white" />
                     </div>
@@ -82,6 +82,17 @@ export default function ContactPage() {
                       <p className="text-gray-100">Email</p>
                       <a href="mailto:ScruggsPodiatry@verizon.net" className="text-lg font-bold text-white hover:text-gray-200">
                         ScruggsPodiatry@verizon.net
+                      </a>
+                    </div>
+                  </div>
+                  <div className="flex items-center group">
+                    <div className="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center mr-3">
+                      <Instagram className="h-5 w-5 text-white" />
+                    </div>
+                    <div>
+                      <p className="text-gray-100">Instagram</p>
+                      <a href="https://www.instagram.com/verentonintl" target="_blank" rel="noopener noreferrer" className="text-lg font-bold text-white hover:text-gray-200">
+                        @verentonintl
                       </a>
                     </div>
                   </div>
