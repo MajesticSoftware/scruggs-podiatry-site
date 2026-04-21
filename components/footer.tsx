@@ -24,16 +24,16 @@ export function Footer() {
                 <div className="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center mr-2 group-hover:scale-110 transition-all">
                   <Phone className="h-4 w-4 text-cyan-400" />
                 </div>
-                <a href="tel:4104865454" className="text-sm text-gray-200 hover:text-cyan-400 transition-colors">
-                  (410) 486-5454
+                <a href="tel:4106537744" className="text-sm text-gray-200 hover:text-cyan-400 transition-colors">
+                  (410) 653-7744
                 </a>
               </div>
               <div className="flex items-center group">
                 <div className="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center mr-2 group-hover:scale-110 transition-all">
                   <Mail className="h-4 w-4 text-cyan-400" />
                 </div>
-                <a href="mailto:ScruggsPodiatry@verizon.net" className="text-sm text-gray-200 hover:text-cyan-400 transition-colors">
-                  ScruggsPodiatry@verizon.net
+                <a href="mailto:Scruggspodiatry@outlook.com" className="text-sm text-gray-200 hover:text-cyan-400 transition-colors">
+                  Scruggspodiatry@outlook.com
                 </a>
               </div>
             </div>
@@ -47,10 +47,11 @@ export function Footer() {
                 <Clock className="h-4 w-4 mr-2 text-cyan-400" />
                 <span className="text-cyan-400 font-semibold">By Appointment Only</span>
               </div>
-              <p className="text-gray-200"><span className="text-cyan-400 font-semibold">Mon:</span> 9:00am – 6:00pm</p>
-              <p className="text-gray-400"><span className="font-semibold">Tue & Wed:</span> Closed</p>
-              <p className="text-gray-200"><span className="text-cyan-400 font-semibold">Thu:</span> 10:00am – 5:00pm</p>
-              <p className="text-gray-200"><span className="text-cyan-400 font-semibold">Fri:</span> 10:00am – 1:00pm</p>
+              <p className="text-gray-200"><span className="text-cyan-400 font-semibold">Mon:</span> 9:30am – 6:00pm</p>
+              <p className="text-gray-200"><span className="text-cyan-400 font-semibold">Tue:</span> 9:30am – 4:30pm</p>
+              <p className="text-gray-400"><span className="font-semibold">Wed:</span> Closed</p>
+              <p className="text-gray-200"><span className="text-cyan-400 font-semibold">Thu:</span> 9:30am – 4:30pm</p>
+              <p className="text-gray-200"><span className="text-cyan-400 font-semibold">Fri:</span> 9:30am – 1:00pm</p>
               <p className="text-gray-400"><span className="font-semibold">Sat & Sun:</span> Closed</p>
             </div>
           </div>
@@ -60,10 +61,10 @@ export function Footer() {
             <h3 className="text-lg font-bold mb-4 text-white">Quick Links</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link href="/appointment" className="text-gray-200 hover:text-cyan-400 transition-colors flex items-center group">
+                <a href="tel:4106537744" className="text-gray-200 hover:text-cyan-400 transition-colors flex items-center group">
                   <span className="w-1 h-1 bg-cyan-400 rounded-full mr-2 group-hover:scale-150 transition-all"></span>
-                  Request Appointment
-                </Link>
+                  Call to Schedule
+                </a>
               </li>
               <li>
                 <Link href="/patient-center" className="text-gray-200 hover:text-cyan-400 transition-colors flex items-center group">

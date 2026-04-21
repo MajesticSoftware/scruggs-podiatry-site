@@ -68,12 +68,12 @@ export default function CovidPage() {
                 patients and our staff.
               </p>
               <div className="mt-6 text-center">
-                <Link
-                  href="/appointment"
+                <a
+                  href="tel:4106537744"
                   className="inline-flex items-center px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-lg hover:bg-blue-700 transition-all"
                 >
-                  Schedule Your Appointment
-                </Link>
+                  Call (410) 653-7744 to Schedule
+                </a>
               </div>
             </div>
           </div>
@@ -134,10 +134,10 @@ export default function CovidPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="tel:4104865454"
+                href="tel:4106537744"
                 className="inline-flex items-center justify-center px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-lg hover:bg-blue-700 transition-all"
               >
-                Call (410) 486-5454
+                Call (410) 653-7744
               </a>
               <Link
                 href="/contact"

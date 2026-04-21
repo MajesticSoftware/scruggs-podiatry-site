@@ -142,15 +142,15 @@ export default function CommonDisordersPage() {
           <div className="mt-12 bg-blue-50 rounded-lg p-6">
             <p className="text-gray-700">
               <strong className="text-gray-900">Note:</strong> This information is provided for educational purposes only. 
-              For proper diagnosis and treatment of any foot or ankle condition, please schedule an appointment with Dr. Scruggs.
+              For proper diagnosis and treatment of any foot or ankle condition, please call our office to schedule with Dr. Scruggs.
             </p>
-            <Link
-              href="/appointment"
+            <a
+              href="tel:4106537744"
               className="inline-flex items-center mt-4 text-blue-600 hover:text-blue-700 font-medium"
             >
-              Schedule an Appointment
+              Call (410) 653-7744
               <ChevronRight className="h-4 w-4 ml-1" />
-            </Link>
+            </a>
           </div>
         </div>
       </section>

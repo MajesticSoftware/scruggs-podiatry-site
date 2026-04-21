@@ -200,12 +200,12 @@ export default function WhatIsPodiatristPage() {
               Dr. Scruggs and our team are here to help you achieve optimal foot health.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link
-                href="/appointment"
+              <a
+                href="tel:4106537744"
                 className="inline-flex items-center justify-center px-8 py-4 bg-blue-600 text-white font-bold rounded-lg shadow-lg hover:bg-blue-700 transition-all transform hover:scale-105"
               >
-                Schedule a Consultation
-              </Link>
+                Call (410) 653-7744
+              </a>
               <Link
                 href="/services"
                 className="inline-flex items-center justify-center px-8 py-4 bg-white text-blue-600 font-bold rounded-lg shadow-lg border-2 border-blue-600 hover:bg-blue-50 transition-all"

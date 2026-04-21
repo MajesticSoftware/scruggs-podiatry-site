@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowRight, Phone, Calendar, Footprints, Award, Users, Clock, AlertCircle } from "lucide-react";
+import { ArrowRight, Phone, Footprints, Award, Users, Clock, AlertCircle, Stethoscope } from "lucide-react";
 import { InteractiveFootModel } from "@/components/foot-model";
 import { ThreeJSBackground } from "@/components/three-js-background";
 import { loadContent } from "@/lib/content-loader";
@@ -33,13 +33,13 @@ export default function Home() {
                 {welcomeContent.split('\n')[0] || "Scruggs Podiatry, PC is honored to have been servicing the Baltimore Metro Community and vicinity for 25+ years."}
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Link
-                  href="/appointment"
+                <a
+                  href="tel:4106537744"
                   className="inline-flex items-center px-8 py-4 gradient-accent text-white rounded-lg font-semibold hover-lift shadow-glow transition-all"
                 >
-                  Request Appointment
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </Link>
+                  <Phone className="mr-2 h-5 w-5" />
+                  Call (410) 653-7744
+                </a>
                 <Link
                   href="/services"
                   className="inline-flex items-center justify-center px-8 py-4 bg-white text-blue-600 font-bold rounded-lg shadow-lg hover:bg-gray-100 transition-all transform hover:scale-105"
@@ -107,7 +107,7 @@ export default function Home() {
               { title: "General Podiatry", icon: Footprints, desc: "Routine foot care and preventive treatments" },
               { title: "Diabetic Foot Care", icon: Users, desc: "Specialized care for diabetic patients" },
               { title: "Custom Orthotics", icon: Award, desc: "Prescription orthotics for optimal support" },
-              { title: "Foot Surgery", icon: Calendar, desc: "Advanced surgical procedures when needed" }
+              { title: "Foot Surgery", icon: Stethoscope, desc: "Advanced surgical procedures when needed" }
             ].map((service, index) => (
               <div key={index} className="glass p-6 rounded-xl shadow-glow hover-lift transition-all duration-300">
                 <div className="w-16 h-16 gradient-primary rounded-full flex items-center justify-center mb-4 shadow-glow">
@@ -138,15 +138,15 @@ export default function Home() {
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {/* Appointment CTA */}
-            <Link href="/appointment" className="group relative overflow-hidden rounded-2xl shadow-glow hover-lift block">
-              <Image src="/images/cta-appointment.jpg" alt="Request Appointment" width={400} height={270} className="w-full h-52 object-cover group-hover:scale-105 transition-transform duration-500" />
+            {/* Call CTA */}
+            <a href="tel:4106537744" className="group relative overflow-hidden rounded-2xl shadow-glow hover-lift block">
+              <Image src="/images/cta-appointment.jpg" alt="Call Our Office" width={400} height={270} className="w-full h-52 object-cover group-hover:scale-105 transition-transform duration-500" />
               <div className="absolute inset-0 bg-gradient-to-t from-blue-900/90 via-blue-900/40 to-transparent" />
               <div className="absolute bottom-0 p-5">
-                <h3 className="text-white font-bold text-lg">Request Appointment</h3>
-                <p className="text-blue-200 text-sm">Book your visit today</p>
+                <h3 className="text-white font-bold text-lg">Call Our Office</h3>
+                <p className="text-blue-200 text-sm">(410) 653-7744</p>
               </div>
-            </Link>
+            </a>
             {/* Services CTA */}
             <Link href="/services" className="group relative overflow-hidden rounded-2xl shadow-glow hover-lift block">
               <Image src="/images/cta-services.jpg" alt="Our Services" width={400} height={270} className="w-full h-52 object-cover group-hover:scale-105 transition-transform duration-500" />
@@ -188,20 +188,19 @@ export default function Home() {
             Schedule your appointment today and experience expert podiatric care
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              href="/appointment"
+            <a
+              href="tel:4106537744"
               className="inline-flex items-center justify-center px-8 py-4 bg-white text-blue-600 font-bold rounded-lg shadow-lg hover:bg-gray-100 transition-all transform hover:scale-105"
             >
-              <Calendar className="mr-2 h-5 w-5" />
-              Request Appointment
-            </Link>
-            <a
-              href="tel:4104865454"
+              <Phone className="mr-2 h-5 w-5" />
+              Call (410) 653-7744
+            </a>
+            <Link
+              href="/contact"
               className="inline-flex items-center justify-center px-8 py-4 bg-transparent text-white font-bold rounded-lg border-2 border-white hover:bg-white hover:text-blue-600 transition-all"
             >
-              <Phone className="mr-2 h-5 w-5" />
-              (410) 486-5454
-            </a>
+              Contact Us
+            </Link>
           </div>
         </div>
       </section>

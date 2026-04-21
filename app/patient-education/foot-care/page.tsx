@@ -220,12 +220,12 @@ export default function FootCarePage() {
             <p className="text-lg mb-8 text-blue-100">
               Our team is here to help you maintain healthy feet for life.
             </p>
-            <Link
-              href="/appointment"
+            <a
+              href="tel:4106537744"
               className="inline-flex items-center justify-center px-8 py-4 bg-white text-blue-600 font-bold rounded-lg shadow-lg hover:bg-gray-100 transition-all transform hover:scale-105"
             >
-              Schedule a Foot Care Consultation
-            </Link>
+              Call (410) 653-7744
+            </a>
           </div>
         </div>
       </section>

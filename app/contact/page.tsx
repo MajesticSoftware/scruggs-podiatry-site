@@ -1,4 +1,4 @@
-import { MapPin, Phone, Mail, Clock, Car, Printer, Calendar, Users, AlertCircle, Instagram } from "lucide-react";
+import { MapPin, Phone, Mail, Clock, Car, Printer, Users } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -69,8 +69,8 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <p className="text-gray-100">Phone</p>
-                      <a href="tel:4104865454" className="text-lg font-bold text-white hover:text-gray-200">
-                        (410) 486-5454
+                      <a href="tel:4106537744" className="text-lg font-bold text-white hover:text-gray-200">
+                        (410) 653-7744
                       </a>
                     </div>
                   </div>
@@ -80,7 +80,7 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <p className="text-gray-100">Fax</p>
-                      <p className="text-lg font-bold text-white">(410) 486-5353</p>
+                      <p className="text-lg font-bold text-white">(410) 653-7745</p>
                     </div>
                   </div>
                   <div className="flex items-center">
@@ -89,8 +89,8 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <p className="text-gray-100">Email</p>
-                      <a href="mailto:ScruggsPodiatry@verizon.net" className="text-lg font-bold text-white hover:text-gray-200">
-                        ScruggsPodiatry@verizon.net
+                      <a href="mailto:Scruggspodiatry@outlook.com" className="text-lg font-bold text-white hover:text-gray-200">
+                        Scruggspodiatry@outlook.com
                       </a>
                     </div>
                   </div>
@@ -107,11 +107,11 @@ export default function ContactPage() {
                 <div className="space-y-2 text-gray-700">
                   <div className="flex justify-between p-2 hover:bg-purple-50 rounded">
                     <span className="font-medium">Monday</span>
-                    <span className="text-purple-600 font-semibold">9:00 AM - 6:00 PM</span>
+                    <span className="text-purple-600 font-semibold">9:30 AM - 6:00 PM</span>
                   </div>
                   <div className="flex justify-between p-2 hover:bg-purple-50 rounded">
                     <span className="font-medium">Tuesday</span>
-                    <span className="text-gray-500">Closed</span>
+                    <span className="text-purple-600 font-semibold">9:30 AM - 4:30 PM</span>
                   </div>
                   <div className="flex justify-between p-2 hover:bg-purple-50 rounded">
                     <span className="font-medium">Wednesday</span>
@@ -119,11 +119,11 @@ export default function ContactPage() {
                   </div>
                   <div className="flex justify-between p-2 hover:bg-purple-50 rounded">
                     <span className="font-medium">Thursday</span>
-                    <span className="text-purple-600 font-semibold">10:00 AM - 5:00 PM</span>
+                    <span className="text-purple-600 font-semibold">9:30 AM - 4:30 PM</span>
                   </div>
                   <div className="flex justify-between p-2 hover:bg-purple-50 rounded">
                     <span className="font-medium">Friday</span>
-                    <span className="text-purple-600 font-semibold">10:00 AM - 1:00 PM</span>
+                    <span className="text-purple-600 font-semibold">9:30 AM - 1:00 PM</span>
                   </div>
                   <div className="flex justify-between p-2 hover:bg-purple-50 rounded text-gray-500">
                     <span className="font-medium">Saturday & Sunday</span>
@@ -178,19 +178,13 @@ export default function ContactPage() {
               </div>
 
               {/* Quick Actions */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <Link
-                  href="/appointment"
+              <div className="grid grid-cols-1 gap-4">
+                <a
+                  href="tel:4106537744"
                   className="flex items-center justify-center px-6 py-4 bg-blue-600 text-white font-semibold rounded-lg shadow-lg hover:bg-blue-700 transition-all transform hover:scale-105"
                 >
-                  Request Appointment
-                </Link>
-                <a
-                  href="tel:4104865454"
-                  className="flex items-center justify-center px-6 py-4 bg-white text-blue-600 font-semibold rounded-lg shadow-lg border-2 border-blue-600 hover:bg-blue-50 transition-all"
-                >
                   <Phone className="h-5 w-5 mr-2" />
-                  Call Now
+                  Call (410) 653-7744
                 </a>
               </div>
             </div>
@@ -212,27 +206,16 @@ export default function ContactPage() {
       <section className="py-16 gradient-hero">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl font-bold text-center text-white mb-8">Quick Actions</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <Link
-              href="/appointment"
-              className="glass-dark text-white p-6 rounded-xl text-center hover-lift shadow-glow transition-all"
-            >
-              <div className="w-16 h-16 gradient-accent rounded-full flex items-center justify-center mx-auto mb-3 shadow-glow animate-pulse-slow">
-                <Calendar className="h-8 w-8" />
-              </div>
-              <h3 className="font-bold text-lg">Schedule Appointment</h3>
-              <p className="text-gray-200 mt-2">Book your next visit online</p>
-            </Link>
-            
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <a
-              href="tel:4104865454"
+              href="tel:4106537744"
               className="glass-dark text-white p-6 rounded-xl text-center hover-lift shadow-glow transition-all"
             >
               <div className="w-16 h-16 gradient-primary rounded-full flex items-center justify-center mx-auto mb-3 shadow-glow animate-pulse-slow">
                 <Phone className="h-8 w-8" />
               </div>
               <h3 className="font-bold text-lg">Call Us</h3>
-              <p className="text-gray-200 mt-2">(410) 486-5454</p>
+              <p className="text-gray-200 mt-2">(410) 653-7744</p>
             </a>
             
             <Link

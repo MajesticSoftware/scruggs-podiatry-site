@@ -1,5 +1,4 @@
 import { FileText, Download, CreditCard, Clock, AlertCircle, ClipboardList, Shield } from "lucide-react";
-import Link from "next/link";
 
 const insuranceProviders = [
   "Aetna PPO/HMO/Open Choice/Managed Choice/Elect Choice/US Healthcare",
@@ -100,8 +99,8 @@ export default function PatientCenterPage() {
             
             <div className="mt-8 text-center">
               <p className="text-gray-600 mb-4">Having trouble downloading the forms?</p>
-              <a href="tel:4104865454" className="text-blue-600 hover:text-blue-700 font-medium">
-                Call us at (410) 486-5454 and we'll help
+              <a href="tel:4106537744" className="text-blue-600 hover:text-blue-700 font-medium">
+                Call us at (410) 653-7744 and we'll help
               </a>
             </div>
           </div>
@@ -162,8 +161,8 @@ export default function PatientCenterPage() {
                 please notify us <strong>24 hours in advance</strong>. This allows us to offer the appointment 
                 time to another patient in need.
               </p>
-              <a href="tel:4104865454" className="inline-block mt-4 text-blue-600 hover:text-blue-700 font-medium">
-                Call (410) 486-5454
+              <a href="tel:4106537744" className="inline-block mt-4 text-blue-600 hover:text-blue-700 font-medium">
+                Call (410) 653-7744
               </a>
             </div>
           </div>
@@ -173,7 +172,7 @@ export default function PatientCenterPage() {
             <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">Insurance Information</h2>
             <p className="text-gray-700 text-center mb-8">
               Scruggs Podiatry can offer you a wide range of insurance options and currently accepts the following coverage. 
-              Call us at <a href="tel:4104865454" className="text-blue-600 hover:text-blue-700 font-medium">(410) 486-5454</a> for 
+              Call us at <a href="tel:4106537744" className="text-blue-600 hover:text-blue-700 font-medium">(410) 653-7744</a> for 
               additional information or to schedule a visit.
             </p>
             
@@ -201,12 +200,12 @@ export default function PatientCenterPage() {
             <p className="text-gray-600 mb-8">
               We look forward to providing you with exceptional podiatric care.
             </p>
-            <Link
-              href="/appointment"
+            <a
+              href="tel:4106537744"
               className="inline-flex items-center px-8 py-4 bg-blue-600 text-white font-bold rounded-lg shadow-lg hover:bg-blue-700 transition-all transform hover:scale-105"
             >
-              Schedule Your Appointment
-            </Link>
+              Call (410) 653-7744 to Schedule
+            </a>
           </div>
         </div>
       </section>

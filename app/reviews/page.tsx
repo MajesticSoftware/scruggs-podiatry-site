@@ -7,7 +7,7 @@ const testimonials = [
     name: "Sarah M.",
     rating: 5,
     date: "2 months ago",
-    text: "Dr. Scruggs is amazing! He took the time to explain my condition thoroughly and the treatment plan has worked perfectly. My heel pain is completely gone.",
+    text: "Dr. Scruggs is amazing! She took the time to explain my condition thoroughly and the treatment plan has worked perfectly. My heel pain is completely gone.",
     source: "Google"
   },
   {
@@ -15,7 +15,7 @@ const testimonials = [
     name: "Robert L.",
     rating: 5,
     date: "3 months ago",
-    text: "I've been seeing Dr. Scruggs for my diabetic foot care for over 5 years. He's professional, knowledgeable, and truly cares about his patients' well-being.",
+    text: "I've been seeing Dr. Scruggs for my diabetic foot care for over 5 years. She's professional, knowledgeable, and truly cares about her patients' well-being.",
     source: "Healthgrades"
   },
   {
@@ -39,7 +39,7 @@ const testimonials = [
     name: "Patricia W.",
     rating: 5,
     date: "6 months ago",
-    text: "Dr. Scruggs successfully treated my bunion without surgery. I appreciated his conservative approach and attention to detail.",
+    text: "Dr. Scruggs successfully treated my bunion without surgery. I appreciated her conservative approach and attention to detail.",
     source: "Google"
   },
   {
@@ -47,7 +47,7 @@ const testimonials = [
     name: "David S.",
     rating: 5,
     date: "7 months ago",
-    text: "Been going to Dr. Scruggs for years. He's the best podiatrist in the Baltimore area. Always takes time to listen and explain treatment options.",
+    text: "Been going to Dr. Scruggs for years. She's the best podiatrist in the Baltimore area. Always takes time to listen and explain treatment options.",
     source: "Healthgrades"
   }
 ];
@@ -164,12 +164,12 @@ export default function ReviewsPage() {
                 <MessageCircle className="h-5 w-5 mr-2" />
                 Leave a Review
               </a>
-              <Link
-                href="/appointment"
+              <a
+                href="tel:4106537744"
                 className="inline-flex items-center justify-center px-6 py-3 bg-white text-blue-600 font-semibold rounded-lg shadow-lg border-2 border-blue-600 hover:bg-blue-50 transition-all"
               >
-                Schedule Appointment
-              </Link>
+                Call (410) 653-7744
+              </a>
             </div>
           </div>
         </div>

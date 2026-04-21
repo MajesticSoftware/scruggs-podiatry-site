@@ -210,12 +210,12 @@ export default function LinksPage() {
               While these resources are helpful, nothing replaces professional medical care.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link
-                href="/appointment"
+              <a
+                href="tel:4106537744"
                 className="inline-flex items-center justify-center px-8 py-4 bg-white text-blue-600 font-bold rounded-lg shadow-lg hover:bg-gray-100 transition-all transform hover:scale-105"
               >
-                Schedule a Consultation
-              </Link>
+                Call (410) 653-7744
+              </a>
               <Link
                 href="/patient-education"
                 className="inline-flex items-center justify-center px-8 py-4 bg-transparent text-white font-bold rounded-lg border-2 border-white hover:bg-blue-700 transition-all"

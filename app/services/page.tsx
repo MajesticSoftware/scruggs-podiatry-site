@@ -163,12 +163,12 @@ export default function ServicesPage() {
               We treat a wide variety of foot and ankle conditions. Contact us to discuss your specific needs.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link
-                href="/appointment"
+              <a
+                href="tel:4106537744"
                 className="inline-flex items-center justify-center px-6 py-3 bg-white text-purple-700 font-bold rounded-lg shadow-glow hover-lift transition-all"
               >
-                Schedule Consultation
-              </Link>
+                Call (410) 653-7744
+              </a>
               <Link
                 href="/patient-education"
                 className="inline-flex items-center justify-center px-6 py-3 bg-transparent text-white font-bold rounded-lg border-2 border-white hover:bg-white hover:text-purple-700 transition-all"
@@ -222,8 +222,8 @@ export default function ServicesPage() {
                 <p className="text-white mb-4">
                   <strong>For insurance and billing questions, please contact our office:</strong>
                 </p>
-                <a href="tel:4104865454" className="text-white hover:text-gray-100 font-bold text-xl">
-                  (410) 486-5454
+                <a href="tel:4106537744" className="text-white hover:text-gray-100 font-bold text-xl">
+                  (410) 653-7744
                 </a>
               </div>
             </div>

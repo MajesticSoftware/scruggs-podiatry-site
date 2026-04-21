@@ -18,7 +18,6 @@ const sitemapSections = [
     icon: Users,
     links: [
       { name: "Patient Center", href: "/patient-center" },
-      { name: "Appointment Request", href: "/appointment" },
       { name: "Reviews & Testimonials", href: "/reviews" },
       { name: "COVID-19 Update", href: "/covid-19" }
     ]
@@ -120,14 +119,15 @@ export default function SitemapPage() {
                 <h3 className="font-semibold text-gray-900 mb-2">Contact Information</h3>
                 <p className="text-gray-600">19 Walker Avenue, Suite 200</p>
                 <p className="text-gray-600">Pikesville, MD 21208</p>
-                <a href="tel:4104865454" className="text-blue-600 hover:text-blue-700">(410) 486-5454</a>
+                <a href="tel:4106537744" className="text-blue-600 hover:text-blue-700">(410) 653-7744</a>
               </div>
               
               <div>
                 <h3 className="font-semibold text-gray-900 mb-2">Office Hours</h3>
-                <p className="text-gray-600">Monday: 9am - 6pm</p>
-                <p className="text-gray-600">Thursday: 10am - 5pm</p>
-                <p className="text-gray-600">Friday: 10am - 1pm</p>
+                <p className="text-gray-600">Monday: 9:30am - 6pm</p>
+                <p className="text-gray-600">Tuesday: 9:30am - 4:30pm</p>
+                <p className="text-gray-600">Thursday: 9:30am - 4:30pm</p>
+                <p className="text-gray-600">Friday: 9:30am - 1pm</p>
               </div>
               
               <div>

@@ -71,16 +71,15 @@ export default function AboutPage() {
               <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
                 <div className="lg:col-span-2">
                   <p className="text-gray-600 leading-relaxed mb-4">
-                    Dr. Scruggs has been practicing podiatry for over 25 years, dedicating his career to providing exceptional foot and ankle care to patients throughout the Baltimore Metro area. His commitment to staying current with the latest advancements in podiatric medicine ensures that patients receive the most effective treatments available.
+                    Dr. Scruggs has been practicing podiatry for over 25 years, dedicating her career to providing exceptional foot and ankle care to patients throughout the Baltimore Metro area. Her commitment to staying current with the latest advancements in podiatric medicine ensures that patients receive the most effective treatments available.
                   </p>
                   <p className="text-gray-600 leading-relaxed mb-4">
-                    After completing his medical education and specialized podiatric training, Dr. Scruggs established his solo practice with a vision of providing personalized, patient-centered care. Over the years, the practice has grown while maintaining its core values of compassion, excellence, and individual attention.
+                    After completing her medical education and specialized podiatric training, Dr. Scruggs established her solo practice with a vision of providing personalized, patient-centered care. Over the years, the practice has grown while maintaining its core values of compassion, excellence, and individual attention.
                   </p>
                   
                   <h4 className="text-lg font-semibold text-gray-900 mt-6 mb-3">Education & Credentials</h4>
                   <ul className="list-disc list-inside text-gray-600 space-y-2">
                     <li>Doctor of Podiatric Medicine (DPM)</li>
-                    <li>Board Certified in Foot Surgery</li>
                     <li>Member of American Podiatric Medical Association</li>
                     <li>Member of Maryland Podiatric Medical Association</li>
                   </ul>

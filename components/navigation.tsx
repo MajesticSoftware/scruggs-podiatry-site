@@ -21,7 +21,6 @@ const navigationItems = [
       { href: "/patient-education/links", label: "Links & Resources" },
     ],
   },
-  { href: "/appointment", label: "Appointment Request" },
   { href: "/patient-center", label: "Patient Center" },
   { href: "/reviews", label: "Reviews" },
   { href: "/contact", label: "Contact Us" },

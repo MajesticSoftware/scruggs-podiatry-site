@@ -204,7 +204,7 @@ export default function PrivacyPage() {
               <p>19 Walker Avenue, Suite 200</p>
               <p>Pikesville, MD 21208</p>
               <p className="mt-2">
-                Phone: <a href="tel:4104865454" className="underline">(410) 486-5454</a>
+                Phone: <a href="tel:4106537744" className="underline">(410) 653-7744</a>
               </p>
             </div>
             <p className="text-blue-100 text-sm">
