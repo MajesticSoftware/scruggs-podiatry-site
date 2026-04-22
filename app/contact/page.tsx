@@ -111,7 +111,7 @@ export default function ContactPage() {
                   </div>
                   <div className="flex justify-between p-2 hover:bg-purple-50 rounded">
                     <span className="font-medium">Tuesday</span>
-                    <span className="text-purple-600 font-semibold">9:30 AM - 4:30 PM</span>
+                    <span className="text-purple-600 font-semibold">9:30 AM - 5:00 PM</span>
                   </div>
                   <div className="flex justify-between p-2 hover:bg-purple-50 rounded">
                     <span className="font-medium">Wednesday</span>
@@ -119,7 +119,7 @@ export default function ContactPage() {
                   </div>
                   <div className="flex justify-between p-2 hover:bg-purple-50 rounded">
                     <span className="font-medium">Thursday</span>
-                    <span className="text-purple-600 font-semibold">9:30 AM - 4:30 PM</span>
+                    <span className="text-purple-600 font-semibold">9:30 AM - 4:00 PM</span>
                   </div>
                   <div className="flex justify-between p-2 hover:bg-purple-50 rounded">
                     <span className="font-medium">Friday</span>

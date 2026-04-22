@@ -125,8 +125,8 @@ export default function SitemapPage() {
               <div>
                 <h3 className="font-semibold text-gray-900 mb-2">Office Hours</h3>
                 <p className="text-gray-600">Monday: 9:30am - 6pm</p>
-                <p className="text-gray-600">Tuesday: 9:30am - 4:30pm</p>
-                <p className="text-gray-600">Thursday: 9:30am - 4:30pm</p>
+                <p className="text-gray-600">Tuesday: 9:30am - 5pm</p>
+                <p className="text-gray-600">Thursday: 9:30am - 4pm</p>
                 <p className="text-gray-600">Friday: 9:30am - 1pm</p>
               </div>
               

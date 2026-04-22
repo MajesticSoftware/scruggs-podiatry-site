@@ -48,9 +48,9 @@ export function Footer() {
                 <span className="text-cyan-400 font-semibold">By Appointment Only</span>
               </div>
               <p className="text-gray-200"><span className="text-cyan-400 font-semibold">Mon:</span> 9:30am – 6:00pm</p>
-              <p className="text-gray-200"><span className="text-cyan-400 font-semibold">Tue:</span> 9:30am – 4:30pm</p>
+              <p className="text-gray-200"><span className="text-cyan-400 font-semibold">Tue:</span> 9:30am – 5:00pm</p>
               <p className="text-gray-400"><span className="font-semibold">Wed:</span> Closed</p>
-              <p className="text-gray-200"><span className="text-cyan-400 font-semibold">Thu:</span> 9:30am – 4:30pm</p>
+              <p className="text-gray-200"><span className="text-cyan-400 font-semibold">Thu:</span> 9:30am – 4:00pm</p>
               <p className="text-gray-200"><span className="text-cyan-400 font-semibold">Fri:</span> 9:30am – 1:00pm</p>
               <p className="text-gray-400"><span className="font-semibold">Sat & Sun:</span> Closed</p>
             </div>
