@@ -11,6 +11,7 @@ export const metadata: Metadata = {
   description: "Expert podiatric care serving the Baltimore Metro area for over 25 years. Specializing in foot and ankle conditions, diabetic foot care, custom orthotics, and surgery.",
   keywords: "podiatrist, foot doctor, ankle specialist, Pikesville MD, Baltimore podiatry, diabetic foot care, heel pain, bunions, custom orthotics",
   authors: [{ name: "Scruggs Podiatry PC" }],
+  manifest: "/site.webmanifest",
   openGraph: {
     title: "Scruggs Podiatry PC",
     description: "Expert foot and ankle care in Pikesville, MD",
