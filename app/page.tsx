@@ -51,7 +51,7 @@ export default function Home() {
               <div className="absolute -inset-6 bg-gradient-to-tr from-cyan-400/30 via-purple-500/20 to-pink-400/30 rounded-3xl blur-2xl"></div>
               <div className="relative rounded-3xl overflow-hidden shadow-glow-lg ring-1 ring-white/20">
                 <Image
-                  src="/images/p-scruggs1.jpg"
+                  src="/DitraPodiatry.jpeg"
                   alt="Dr. Ditra S. Scruggs, DPM"
                   width={640}
                   height={720}
