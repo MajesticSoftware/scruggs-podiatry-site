@@ -18,7 +18,7 @@ export default function Home() {
           src="/images/slide1.jpg"
           alt="Healthy family feet"
           fill
-          className="object-cover object-center"
+          className="object-cover object-center [clip-path:inset(0_0_0_50%)]"
           priority
         />
         <div className="absolute inset-0 bg-gradient-to-r from-blue-900/85 via-purple-900/70 to-blue-900/85" />
