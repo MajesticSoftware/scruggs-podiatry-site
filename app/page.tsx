@@ -21,10 +21,25 @@ export default function Home() {
           className="object-cover object-center"
           priority
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-900/85 via-purple-900/70 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-l from-blue-900/85 via-purple-900/70 to-transparent" />
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 flex items-center min-h-[90vh]">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center w-full">
-            <div>
+            <div className="relative hidden lg:block order-1">
+              <div className="absolute inset-0 bg-gradient-to-tr from-cyan-400/25 via-purple-500/15 to-pink-400/25 rounded-full blur-3xl"></div>
+              <Image
+                src="/DitraPodiatry.png"
+                alt="Dr. Ditra S. Scruggs, DPM"
+                width={640}
+                height={720}
+                className="relative w-full h-auto object-contain drop-shadow-2xl"
+                priority
+              />
+              <div className="relative mt-2 text-center">
+                <p className="text-white text-xl font-bold drop-shadow-lg">Dr. Ditra S. Scruggs, DPM</p>
+                <p className="text-cyan-200 text-sm drop-shadow">Podiatrist & Surgeon • 25+ Years</p>
+              </div>
+            </div>
+            <div className="order-2">
               <h1 className="text-5xl md:text-7xl font-bold mb-6 text-white drop-shadow-lg">
                 Welcome to <span className="text-gradient">Scruggs Podiatry</span>
               </h1>
@@ -45,21 +60,6 @@ export default function Home() {
                 >
                   Our Services
                 </Link>
-              </div>
-            </div>
-            <div className="relative hidden lg:block">
-              <div className="absolute inset-0 bg-gradient-to-tr from-cyan-400/25 via-purple-500/15 to-pink-400/25 rounded-full blur-3xl"></div>
-              <Image
-                src="/DitraPodiatry.png"
-                alt="Dr. Ditra S. Scruggs, DPM"
-                width={640}
-                height={720}
-                className="relative w-full h-auto object-contain drop-shadow-2xl"
-                priority
-              />
-              <div className="relative mt-2 text-center">
-                <p className="text-white text-xl font-bold drop-shadow-lg">Dr. Ditra S. Scruggs, DPM</p>
-                <p className="text-cyan-200 text-sm drop-shadow">Podiatrist & Surgeon • 25+ Years</p>
               </div>
             </div>
           </div>
