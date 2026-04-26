@@ -41,7 +41,7 @@ export default function Home() {
             </div>
             <div>
               <h1 className="text-5xl md:text-7xl font-bold mb-6 text-white drop-shadow-lg">
-                Welcome to <span className="text-gradient">Scruggs Podiatry</span>
+                Welcome to <span className="text-gradient">Scruggs Podiatry, PC</span>
               </h1>
               <p className="text-xl md:text-2xl mb-8 text-gray-100 max-w-2xl leading-relaxed drop-shadow">
                 {welcomeContent.split('\n')[0] || "Scruggs Podiatry, PC is honored to have been servicing the Baltimore Metro Community and vicinity for 25+ years."}
