@@ -48,20 +48,18 @@ export default function Home() {
               </div>
             </div>
             <div className="relative hidden lg:block">
-              <div className="absolute -inset-6 bg-gradient-to-tr from-cyan-400/30 via-purple-500/20 to-pink-400/30 rounded-3xl blur-2xl"></div>
-              <div className="relative rounded-3xl overflow-hidden shadow-glow-lg ring-1 ring-white/20">
-                <Image
-                  src="/DitraPodiatry.jpeg"
-                  alt="Dr. Ditra S. Scruggs, DPM"
-                  width={640}
-                  height={720}
-                  className="w-full h-auto object-cover"
-                  priority
-                />
-                <div className="absolute inset-x-0 bottom-0 p-6 bg-gradient-to-t from-black/80 via-black/40 to-transparent">
-                  <p className="text-white text-lg font-bold">Dr. Ditra S. Scruggs, DPM</p>
-                  <p className="text-cyan-200 text-sm">Podiatrist & Surgeon • 25+ Years</p>
-                </div>
+              <div className="absolute inset-0 bg-gradient-to-tr from-cyan-400/25 via-purple-500/15 to-pink-400/25 rounded-full blur-3xl"></div>
+              <Image
+                src="/DitraPodiatry.png"
+                alt="Dr. Ditra S. Scruggs, DPM"
+                width={640}
+                height={720}
+                className="relative w-full h-auto object-contain drop-shadow-2xl"
+                priority
+              />
+              <div className="relative mt-2 text-center">
+                <p className="text-white text-xl font-bold drop-shadow-lg">Dr. Ditra S. Scruggs, DPM</p>
+                <p className="text-cyan-200 text-sm drop-shadow">Podiatrist & Surgeon • 25+ Years</p>
               </div>
             </div>
           </div>
